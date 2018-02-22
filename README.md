@@ -1,1 +1,2 @@
 # CDMA-Implementation
+Implements Code-Division Multiple Access protocol using threads and pipeline for communication between threads. Consists of 4 transmitter-receiver thread pairs and a joiner thread. Allows transmitter threads to input 8-bit chip sequences which are sent to a joiner thread. This thread adds the sequences and sends it to receiver threads. Each receiver decodes the sequence to check whether the message was sent by their respective transmitter.
